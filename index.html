@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conway's Cards | Awesome Sports Cards for Sale!</title>
+    <meta name="description" content="Conway's Cards - Sports cards for sale by Conway, a 6-year-old entrepreneur! Basketball, baseball, and football cards at great prices.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Confetti Background -->
+    <div class="confetti"></div>
+
+    <!-- Floating Rockets -->
+    <div class="rocket rocket-1">🚀</div>
+    <div class="rocket rocket-2">🎆</div>
+    <div class="rocket rocket-3">🎇</div>
+    <div class="rocket rocket-4">🚀</div>
+    <div class="rocket rocket-5">🎆</div>
+    <div class="rocket rocket-6">🎇</div>
+
+    <!-- Twinkling Stars -->
+    <div class="sparkle sparkle-1">⭐</div>
+    <div class="sparkle sparkle-2">✨</div>
+    <div class="sparkle sparkle-3">⭐</div>
+    <div class="sparkle sparkle-4">✨</div>
+    <div class="sparkle sparkle-5">⭐</div>
+    <div class="sparkle sparkle-6">✨</div>
+    <div class="sparkle sparkle-7">⭐</div>
+    <div class="sparkle sparkle-8">✨</div>
+
+    <!-- Firework Bursts -->
+    <div class="firework-burst fb-1 red">
+        <div class="spark"></div><div class="spark"></div><div class="spark"></div><div class="spark"></div>
+        <div class="spark"></div><div class="spark"></div><div class="spark"></div><div class="spark"></div>
+    </div>
+    <div class="firework-burst fb-2 blue">
+        <div class="spark"></div><div class="spark"></div><div class="spark"></div><div class="spark"></div>
+        <div class="spark"></div><div class="spark"></div><div class="spark"></div><div class="spark"></div>
+    </div>
+    <div class="firework-burst fb-3 purple">
+        <div class="spark"></div><div class="spark"></div><div class="spark"></div><div class="spark"></div>
+        <div class="spark"></div><div class="spark"></div><div class="spark"></div><div class="spark"></div>
+    </div>
+    <div class="firework-burst fb-4 yellow">
+        <div class="spark"></div><div class="spark"></div><div class="spark"></div><div class="spark"></div>
+        <div class="spark"></div><div class="spark"></div><div class="spark"></div><div class="spark"></div>
+    </div>
+    <div class="firework-burst fb-5 green">
+        <div class="spark"></div><div class="spark"></div><div class="spark"></div><div class="spark"></div>
+        <div class="spark"></div><div class="spark"></div><div class="spark"></div><div class="spark"></div>
+    </div>
+    <div class="firework-burst fb-6 red">
+        <div class="spark"></div><div class="spark"></div><div class="spark"></div><div class="spark"></div>
+        <div class="spark"></div><div class="spark"></div><div class="spark"></div><div class="spark"></div>
+    </div>
+
+    <!-- Colorful Streamers -->
+    <div class="streamer streamer-1"></div>
+    <div class="streamer streamer-2"></div>
+    <div class="streamer streamer-3"></div>
+    <div class="streamer streamer-4"></div>
+    <div class="streamer streamer-5"></div>
+    <div class="streamer streamer-6"></div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="images/logo.jpg" alt="Conway's Cards">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#cards">Cards</a></li>
+                <li><a href="#about">About Conway</a></li>
+                <li><a href="#contact" class="btn btn-nav">Buy Cards!</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <img src="images/logo.jpg" alt="Conway's Cards" class="hero-logo">
+            <h1 class="hero-title">Conway's Cards</h1>
+            <p class="hero-tagline">Awesome Sports Cards Sold by a 6-Year-Old!</p>
+            <a href="#cards" class="btn btn-primary">See My Cards!</a>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </header>
+
+    <!-- Cards Section -->
+    <section id="cards" class="section cards-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">🚀 My Collection 🚀</span>
+                <h2>Cards For Sale!</h2>
+                <p class="section-subtitle">Check out all my awesome cards! Message me to buy one!</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Cards</button>
+                <button class="filter-btn" data-filter="basketball">Basketball</button>
+                <button class="filter-btn" data-filter="baseball">Baseball</button>
+                <button class="filter-btn" data-filter="football">Football</button>
+            </div>
+
+            <div class="cards-grid">
+                <!-- Basketball Cards -->
+                <div class="card-item" data-category="basketball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7832.jpg" alt="Jaden Ivey Rookie Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Jaden Ivey</h3>
+                        <p class="card-details">Donruss Rated Rookie - Purdue</p>
+                        <p class="card-price">$2.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="basketball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7834.jpg" alt="Jabari Smith Jr. Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Jabari Smith Jr.</h3>
+                        <p class="card-details">Chronicles - Auburn</p>
+                        <p class="card-price">$1.50</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="basketball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7836.jpg" alt="Wendell Moore Jr. Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Wendell Moore Jr.</h3>
+                        <p class="card-details">Donruss Rated Rookie - Duke</p>
+                        <p class="card-price">$1.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="basketball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7837.jpg" alt="LaMelo Ball Card">
+                        <span class="card-badge hot">Hot!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>LaMelo Ball</h3>
+                        <p class="card-details">Charlotte Hornets Rookie</p>
+                        <p class="card-price">$7.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="basketball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7838.jpg" alt="Malaki Branham Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Malaki Branham</h3>
+                        <p class="card-details">Luminance - Ohio State</p>
+                        <p class="card-price">$1.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <!-- Baseball Card -->
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7840.jpg" alt="Jackson Holliday Card">
+                        <span class="card-badge hot">Super Hot!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Jackson Holliday</h3>
+                        <p class="card-details">Orioles Holiday Rookie</p>
+                        <p class="card-price">$11.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <!-- Football Cards -->
+                <div class="card-item" data-category="football">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7841.jpg" alt="De'Von Achane Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>De'Von Achane</h3>
+                        <p class="card-details">Select - Dolphins</p>
+                        <p class="card-price">$4.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="basketball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7842.jpg" alt="Dyson Daniels Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Dyson Daniels</h3>
+                        <p class="card-details">Recon Purple Rookie</p>
+                        <p class="card-price">$2.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="football">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7843.jpg" alt="Jacob Eason Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Jacob Eason</h3>
+                        <p class="card-details">Clear Vision - Colts</p>
+                        <p class="card-price">$1.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="basketball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7845.jpg" alt="Stephon Castle Card">
+                        <span class="card-badge hot">Hot!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Stephon Castle</h3>
+                        <p class="card-details">Countdown Complete Chrome</p>
+                        <p class="card-price">$5.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="basketball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7846.jpg" alt="Reed Sheppard Card">
+                        <span class="card-badge hot">Super Hot!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Reed Sheppard</h3>
+                        <p class="card-details">Prizm Rookie - Rockets</p>
+                        <p class="card-price">$11.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="basketball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7847.jpg" alt="Chauncey Billups Card">
+                    </div>
+                    <div class="card-info">
+                        <h3>Chauncey Billups</h3>
+                        <p class="card-details">Winner Stays - Pistons</p>
+                        <p class="card-price">$0.50</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="basketball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7848.jpg" alt="Zion Williamson Card">
+                        <span class="card-badge hot">Hot!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Zion Williamson</h3>
+                        <p class="card-details">T-Minus - Pelicans</p>
+                        <p class="card-price">$2.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="basketball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7849.jpg" alt="Keegan Murray Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Keegan Murray</h3>
+                        <p class="card-details">Luminance Rookie - Iowa</p>
+                        <p class="card-price">$2.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="basketball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7850.jpg" alt="Ochai Agbaji Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Ochai Agbaji</h3>
+                        <p class="card-details">Luminance Rookie - Kansas</p>
+                        <p class="card-price">$1.50</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="basketball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7851.jpg" alt="E.J. Liddell Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>E.J. Liddell</h3>
+                        <p class="card-details">Luminance Rookie - Ohio State</p>
+                        <p class="card-price">$1.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="basketball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_7852.jpg" alt="Ryan Rollins Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Ryan Rollins</h3>
+                        <p class="card-details">Power Surge - Toledo</p>
+                        <p class="card-price">$1.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <!-- New Baseball Cards - 2024 Topps Holiday -->
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8348.jpg" alt="Hyeseong Kim Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Hyeseong Kim</h3>
+                        <p class="card-details">Topps Holiday RC - Dodgers</p>
+                        <p class="card-price">$4.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8349.jpg" alt="Jackson Jobe Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Jackson Jobe</h3>
+                        <p class="card-details">Topps Holiday RC - Tigers</p>
+                        <p class="card-price">$3.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8350.jpg" alt="Paul Skenes Card">
+                        <span class="card-badge hot">Hot!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Paul Skenes</h3>
+                        <p class="card-details">Topps Holiday RC - Pirates</p>
+                        <p class="card-price">$3.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8351.jpg" alt="Trey Sweeney Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Trey Sweeney</h3>
+                        <p class="card-details">Topps Holiday RC - Tigers</p>
+                        <p class="card-price">$0.50</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8352.jpg" alt="Zebby Matthews Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Zebby Matthews</h3>
+                        <p class="card-details">Topps Holiday RC - Twins</p>
+                        <p class="card-price">$0.50</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8353.jpg" alt="Leo Jimenez Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Leo Jimenez</h3>
+                        <p class="card-details">Topps Holiday RC - Blue Jays</p>
+                        <p class="card-price">$0.50</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8354.jpg" alt="Matt Shaw Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Matt Shaw</h3>
+                        <p class="card-details">Topps Holiday RC - Cubs</p>
+                        <p class="card-price">$2.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8355.jpg" alt="Dalton Rushing Card">
+                        <span class="card-badge hot">Super Hot!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Dalton Rushing</h3>
+                        <p class="card-details">Topps Holiday Blue Sapphire RC - Dodgers</p>
+                        <p class="card-price">$7.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8357.jpg" alt="Will Warren Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Will Warren</h3>
+                        <p class="card-details">Topps Holiday RC - Yankees</p>
+                        <p class="card-price">$0.50</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8358.jpg" alt="Darren Baker Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Darren Baker</h3>
+                        <p class="card-details">Topps Holiday RC - Nationals</p>
+                        <p class="card-price">$0.50</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8359.jpg" alt="Chase Dollander Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Chase Dollander</h3>
+                        <p class="card-details">Topps Holiday RC - Rockies</p>
+                        <p class="card-price">$0.50</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8360.jpg" alt="Roki Sasaki Card">
+                        <span class="card-badge hot">Super Hot!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Roki Sasaki</h3>
+                        <p class="card-details">Topps Holiday RC - Dodgers</p>
+                        <p class="card-price">$7.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8361.jpg" alt="Jackson Holliday Gingerbread Card">
+                        <span class="card-badge hot">Super Hot!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Jackson Holliday</h3>
+                        <p class="card-details">Topps Holiday Gingerbread SP - Orioles</p>
+                        <p class="card-price">$9.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8362.jpg" alt="Zac Veen Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Zac Veen</h3>
+                        <p class="card-details">Topps Holiday RC - Rockies</p>
+                        <p class="card-price">$0.50</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8363.jpg" alt="Moises Ballesteros Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Moises Ballesteros</h3>
+                        <p class="card-details">Topps Holiday RC - Cubs</p>
+                        <p class="card-price">$1.00</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8364.jpg" alt="Dustin Harris Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Dustin Harris</h3>
+                        <p class="card-details">Topps Holiday RC - Rangers</p>
+                        <p class="card-price">$0.50</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+
+                <div class="card-item" data-category="baseball">
+                    <div class="card-image">
+                        <img loading="lazy" src="images/IMG_8365.jpg" alt="Drake Baldwin Card">
+                        <span class="card-badge">Rookie!</span>
+                    </div>
+                    <div class="card-info">
+                        <h3>Drake Baldwin</h3>
+                        <p class="card-details">Topps Holiday RC - Braves</p>
+                        <p class="card-price">$0.50</p>
+                        <a href="#contact" class="btn btn-small">I Want This!</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="more-cards-note">
+                <p>I have even more cards! Message me to see my full collection!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How To Buy Section -->
+    <section class="section how-to-buy">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">🎆 Easy Peasy! 🎆</span>
+                <h2>How To Buy</h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">1</div>
+                    <h3>Pick a Card</h3>
+                    <p>Look through my awesome cards and find one you like!</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">2</div>
+                    <h3>Message Me</h3>
+                    <p>Fill out the form below with which card you want!</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">3</div>
+                    <h3>Get Your Card!</h3>
+                    <p>Pick it up locally or we can mail it to you!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">🎇 Let's Do This! 🎇</span>
+                <h2>Buy a Card!</h2>
+                <p class="section-subtitle">Fill this out and I'll get back to you super fast!</p>
+            </div>
+            <div class="contact-content">
+                <form class="contact-form" action="https://formsubmit.co/codyguymon@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Card Order from Conway's Cards!">
+                    <input type="hidden" name="_next" value="https://conwayscards.com/#contact">
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="text" name="_honey" style="display:none">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="What's your name?">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="So I can message you back!">
+                    </div>
+                    <div class="form-group">
+                        <label for="card">Which Card Do You Want?</label>
+                        <input type="text" id="card" name="card" required placeholder="Tell me which card!">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Anything Else?</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Questions? Want multiple cards? Let me know!"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message!</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">🚀 The Card Boss 🚀</span>
+                <h2>Meet Conway!</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hey! I'm <strong>Conway</strong> and I'm <strong>6 years old!</strong></p>
+                    <p>I love collecting sports cards, building with Legos, and starting businesses! I'm super smart and I love learning new things.</p>
+                    <p>I started Conway's Cards because I have SO many awesome cards and I want to share them with other collectors!</p>
+                    <p>When you buy a card from me, you're supporting a kid entrepreneur. Thanks for checking out my cards!</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Years Old</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Cards</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">#1</span>
+                        <span class="stat-label">Card Boss</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <img loading="lazy" src="images/logo.jpg" alt="Conway's Cards" class="footer-logo">
+                <p>Awesome sports cards sold by Conway, a 6-year-old entrepreneur from Utah!</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Conway's Cards. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
