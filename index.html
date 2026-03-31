@@ -92,6 +92,10 @@
             <h1 class="hero-title">Conway's Cards</h1>
             <p class="hero-tagline">Awesome Sports Cards Sold by a 6-Year-Old!</p>
             <a href="#cards" class="btn btn-primary">See My Cards!</a>
+            <div style="max-width: 400px; margin: 1.5rem auto 0; position: relative;">
+                <input type="text" id="heroSearch" placeholder="Search for a card..." style="width: 100%; padding: 12px 20px 12px 45px; border-radius: 30px; border: 2px solid rgba(0,0,0,0.15); background: rgba(255,255,255,0.9); color: #333; font-size: 1rem; font-family: 'Nunito', sans-serif; outline: none; transition: border-color 0.3s;">
+                <svg style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); opacity: 0.4;" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
         </div>
         <div class="hero-scroll">
             <span>Scroll Down</span>
@@ -620,7 +624,50 @@
                     </div>
                     <div class="form-group">
                         <label for="card">Which Card Do You Want?</label>
-                        <input type="text" id="card" name="card" required placeholder="Tell me which card!">
+                        <select id="card" name="card" required>
+                            <option value="" disabled selected>Pick a card!</option>
+                            <optgroup label="🏀 Basketball">
+                                <option value="Jaden Ivey - Donruss Rated Rookie ($2.00)">Jaden Ivey - Donruss Rated Rookie - $2.00</option>
+                                <option value="Jabari Smith Jr. - Chronicles ($1.50)">Jabari Smith Jr. - Chronicles - $1.50</option>
+                                <option value="Wendell Moore Jr. - Donruss Rated Rookie ($1.00)">Wendell Moore Jr. - Donruss Rated Rookie - $1.00</option>
+                                <option value="LaMelo Ball - Charlotte Hornets Rookie ($7.00)">LaMelo Ball - Charlotte Hornets Rookie - $7.00</option>
+                                <option value="Malaki Branham - Luminance ($1.00)">Malaki Branham - Luminance - $1.00</option>
+                                <option value="Dyson Daniels - Recon Purple Rookie ($2.00)">Dyson Daniels - Recon Purple Rookie - $2.00</option>
+                                <option value="Stephon Castle - Countdown Complete Chrome ($5.00)">Stephon Castle - Countdown Complete Chrome - $5.00</option>
+                                <option value="Reed Sheppard - Prizm Rookie ($11.00)">Reed Sheppard - Prizm Rookie - $11.00</option>
+                                <option value="Chauncey Billups - Winner Stays ($0.50)">Chauncey Billups - Winner Stays - $0.50</option>
+                                <option value="Zion Williamson - T-Minus ($2.00)">Zion Williamson - T-Minus - $2.00</option>
+                                <option value="Keegan Murray - Luminance Rookie ($2.00)">Keegan Murray - Luminance Rookie - $2.00</option>
+                                <option value="Ochai Agbaji - Luminance Rookie ($1.50)">Ochai Agbaji - Luminance Rookie - $1.50</option>
+                                <option value="E.J. Liddell - Luminance Rookie ($1.00)">E.J. Liddell - Luminance Rookie - $1.00</option>
+                                <option value="Ryan Rollins - Power Surge ($1.00)">Ryan Rollins - Power Surge - $1.00</option>
+                            </optgroup>
+                            <optgroup label="⚾ Baseball">
+                                <option value="Jackson Holliday - Orioles Holiday Rookie ($11.00)">Jackson Holliday - Orioles Holiday Rookie - $11.00</option>
+                                <option value="Hyeseong Kim - Topps Holiday RC Dodgers ($4.00)">Hyeseong Kim - Topps Holiday RC Dodgers - $4.00</option>
+                                <option value="Jackson Jobe - Topps Holiday RC Tigers ($3.00)">Jackson Jobe - Topps Holiday RC Tigers - $3.00</option>
+                                <option value="Paul Skenes - Topps Holiday RC Pirates ($3.00)">Paul Skenes - Topps Holiday RC Pirates - $3.00</option>
+                                <option value="Trey Sweeney - Topps Holiday RC Tigers ($0.50)">Trey Sweeney - Topps Holiday RC Tigers - $0.50</option>
+                                <option value="Zebby Matthews - Topps Holiday RC Twins ($0.50)">Zebby Matthews - Topps Holiday RC Twins - $0.50</option>
+                                <option value="Leo Jimenez - Topps Holiday RC Blue Jays ($0.50)">Leo Jimenez - Topps Holiday RC Blue Jays - $0.50</option>
+                                <option value="Matt Shaw - Topps Holiday RC Cubs ($2.00)">Matt Shaw - Topps Holiday RC Cubs - $2.00</option>
+                                <option value="Dalton Rushing - Topps Holiday Blue Sapphire RC Dodgers ($7.00)">Dalton Rushing - Topps Holiday Blue Sapphire RC Dodgers - $7.00</option>
+                                <option value="Will Warren - Topps Holiday RC Yankees ($0.50)">Will Warren - Topps Holiday RC Yankees - $0.50</option>
+                                <option value="Darren Baker - Topps Holiday RC Nationals ($0.50)">Darren Baker - Topps Holiday RC Nationals - $0.50</option>
+                                <option value="Chase Dollander - Topps Holiday RC Rockies ($0.50)">Chase Dollander - Topps Holiday RC Rockies - $0.50</option>
+                                <option value="Roki Sasaki - Topps Holiday RC Dodgers ($7.00)">Roki Sasaki - Topps Holiday RC Dodgers - $7.00</option>
+                                <option value="Jackson Holliday - Topps Holiday Gingerbread SP Orioles ($9.00)">Jackson Holliday - Topps Holiday Gingerbread SP Orioles - $9.00</option>
+                                <option value="Zac Veen - Topps Holiday RC Rockies ($0.50)">Zac Veen - Topps Holiday RC Rockies - $0.50</option>
+                                <option value="Moises Ballesteros - Topps Holiday RC Cubs ($1.00)">Moises Ballesteros - Topps Holiday RC Cubs - $1.00</option>
+                                <option value="Dustin Harris - Topps Holiday RC Rangers ($0.50)">Dustin Harris - Topps Holiday RC Rangers - $0.50</option>
+                                <option value="Drake Baldwin - Topps Holiday RC Braves ($0.50)">Drake Baldwin - Topps Holiday RC Braves - $0.50</option>
+                            </optgroup>
+                            <optgroup label="🏈 Football">
+                                <option value="De'Von Achane - Select Dolphins ($4.00)">De'Von Achane - Select Dolphins - $4.00</option>
+                                <option value="Jacob Eason - Clear Vision Colts ($1.00)">Jacob Eason - Clear Vision Colts - $1.00</option>
+                            </optgroup>
+                            <option value="Other - see message below">Other (describe below)</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="message">Anything Else?</label>
@@ -678,5 +725,35 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script>
+        // Hero search bar - filters cards and scrolls to results
+        const heroSearch = document.getElementById('heroSearch');
+        heroSearch.addEventListener('input', function() {
+            const query = this.value.toLowerCase().trim();
+            const cards = document.querySelectorAll('.card-item');
+            let visibleCount = 0;
+            cards.forEach(card => {
+                if (!query) {
+                    card.style.display = '';
+                    visibleCount++;
+                    return;
+                }
+                const name = card.querySelector('h3').textContent.toLowerCase();
+                const details = card.querySelector('.card-details') ? card.querySelector('.card-details').textContent.toLowerCase() : '';
+                const category = (card.dataset.category || '').toLowerCase();
+                const searchText = name + ' ' + details + ' ' + category;
+                const words = query.split(/\s+/);
+                const match = words.every(w => searchText.includes(w));
+                card.style.display = match ? '' : 'none';
+                if (match) visibleCount++;
+            });
+            // Scroll to cards section when searching
+            if (query.length > 0) {
+                document.querySelector('#cards').scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+        heroSearch.addEventListener('focus', function() { this.style.borderColor = 'rgba(255,100,100,0.6)'; });
+        heroSearch.addEventListener('blur', function() { this.style.borderColor = 'rgba(0,0,0,0.15)'; });
+    </script>
 </body>
 </html>
